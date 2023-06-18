@@ -1,0 +1,939 @@
+No.     Time           Source                Destination           Protocol Length Info
+      1 0.000000000    PcsCompu_9b:cd:1d     Broadcast             ARP      60     Who has 192.168.32.100? Tell 192.168.32.101
+
+Frame 1: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d), Dst: Broadcast (ff:ff:ff:ff:ff:ff)
+    Destination: Broadcast (ff:ff:ff:ff:ff:ff)
+    Source: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Type: ARP (0x0806)
+    Padding: 000000000000000000000000000000000000
+Address Resolution Protocol (request)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: request (1)
+    Sender MAC address: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Sender IP address: 192.168.32.101
+    Target MAC address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Target IP address: 192.168.32.100
+
+No.     Time           Source                Destination           Protocol Length Info
+      2 0.000019977    PcsCompu_c7:e1:36     PcsCompu_9b:cd:1d     ARP      42     192.168.32.100 is at 08:00:27:c7:e1:36
+
+Frame 2: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36), Dst: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Destination: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Source: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Type: ARP (0x0806)
+Address Resolution Protocol (reply)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: reply (2)
+    Sender MAC address: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Sender IP address: 192.168.32.100
+    Target MAC address: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Target IP address: 192.168.32.101
+
+No.     Time           Source                Destination           Protocol Length Info
+      3 0.000191729    192.168.32.101        192.168.32.100        TCP      66     49221 → 443 [SYN] Seq=0 Win=8192 Len=0 MSS=1460 WS=4 SACK_PERM
+
+Frame 3: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d), Dst: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Destination: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Source: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.32.101, Dst: 192.168.32.100
+Transmission Control Protocol, Src Port: 49221, Dst Port: 443, Seq: 0, Len: 0
+    Source Port: 49221
+    Destination Port: 443
+    [Stream index: 0]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 0    (relative sequence number)
+    Sequence Number (raw): 1601206848
+    [Next Sequence Number: 1    (relative sequence number)]
+    Acknowledgment Number: 0
+    Acknowledgment number (raw): 0
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x002 (SYN)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...0 .... = Acknowledgment: Not set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..1. = Syn: Set
+            [Expert Info (Chat/Sequence): Connection establish request (SYN): server port 443]
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ··········S·]
+    Window: 8192
+    [Calculated window size: 8192]
+    Checksum: 0xf14a [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), Window scale, No-Operation (NOP), No-Operation (NOP), SACK permitted
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+      4 0.000232556    192.168.32.100        192.168.32.101        TCP      66     443 → 49221 [SYN, ACK] Seq=0 Ack=1 Win=64240 Len=0 MSS=1460 SACK_PERM WS=128
+
+Frame 4: 66 bytes on wire (528 bits), 66 bytes captured (528 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36), Dst: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Destination: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Source: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.32.100, Dst: 192.168.32.101
+Transmission Control Protocol, Src Port: 443, Dst Port: 49221, Seq: 0, Ack: 1, Len: 0
+    Source Port: 443
+    Destination Port: 49221
+    [Stream index: 0]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 0    (relative sequence number)
+    Sequence Number (raw): 1104428786
+    [Next Sequence Number: 1    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 1601206849
+    1000 .... = Header Length: 32 bytes (8)
+    Flags: 0x012 (SYN, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..1. = Syn: Set
+            [Expert Info (Chat/Sequence): Connection establish acknowledge (SYN+ACK): server port 443]
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A··S·]
+    Window: 64240
+    [Calculated window size: 64240]
+    Checksum: 0xc240 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    Options: (12 bytes), Maximum segment size, No-Operation (NOP), No-Operation (NOP), SACK permitted, No-Operation (NOP), Window scale
+    [Timestamps]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 3]
+        [The RTT to ACK the segment was: 0.000040827 seconds]
+        [iRTT: 0.000158538 seconds]
+
+No.     Time           Source                Destination           Protocol Length Info
+      5 0.000350267    192.168.32.101        192.168.32.100        TCP      60     49221 → 443 [ACK] Seq=1 Ack=1 Win=65700 Len=0
+
+Frame 5: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d), Dst: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Destination: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Source: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Type: IPv4 (0x0800)
+    Padding: 000000000000
+Internet Protocol Version 4, Src: 192.168.32.101, Dst: 192.168.32.100
+Transmission Control Protocol, Src Port: 49221, Dst Port: 443, Seq: 1, Ack: 1, Len: 0
+    Source Port: 49221
+    Destination Port: 443
+    [Stream index: 0]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 1601206849
+    [Next Sequence Number: 1    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 1104428787
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window: 16425
+    [Calculated window size: 65700]
+    [Window size scaling factor: 4]
+    Checksum: 0x9117 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 4]
+        [The RTT to ACK the segment was: 0.000117711 seconds]
+        [iRTT: 0.000158538 seconds]
+
+No.     Time           Source                Destination           Protocol Length Info
+      6 0.000681487    192.168.32.101        192.168.32.100        TLSv1    215    Client Hello
+
+Frame 6: 215 bytes on wire (1720 bits), 215 bytes captured (1720 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d), Dst: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Destination: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Source: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.32.101, Dst: 192.168.32.100
+Transmission Control Protocol, Src Port: 49221, Dst Port: 443, Seq: 1, Ack: 1, Len: 161
+    Source Port: 49221
+    Destination Port: 443
+    [Stream index: 0]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 161]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 1601206849
+    [Next Sequence Number: 162    (relative sequence number)]
+    Acknowledgment Number: 1    (relative ack number)
+    Acknowledgment number (raw): 1104428787
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 16425
+    [Calculated window size: 65700]
+    [Window size scaling factor: 4]
+    Checksum: 0x83a8 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+        [iRTT: 0.000158538 seconds]
+        [Bytes in flight: 161]
+        [Bytes sent since last PSH flag: 161]
+    TCP payload (161 bytes)
+Transport Layer Security
+    TLSv1 Record Layer: Handshake Protocol: Client Hello
+        Content Type: Handshake (22)
+        Version: TLS 1.0 (0x0301)
+        Length: 156
+        Handshake Protocol: Client Hello
+            Handshake Type: Client Hello (1)
+            Length: 152
+            Version: TLS 1.0 (0x0301)
+            Random: 6483c6e14144a67a0002a98e9fe475d689d6d0d52c7b3fc05453c4c9c9fb96dd
+                GMT Unix Time: Jun  9, 2023 20:42:09.000000000 EDT
+                Random Bytes: 4144a67a0002a98e9fe475d689d6d0d52c7b3fc05453c4c9c9fb96dd
+            Session ID Length: 32
+            Session ID: 4f1cf7d427992eaeff0fe2777261935386d70f9e2c8bf17b368902c009e526b6
+            Cipher Suites Length: 24
+            Cipher Suites (12 suites)
+                Cipher Suite: TLS_RSA_WITH_AES_128_CBC_SHA (0x002f)
+                Cipher Suite: TLS_RSA_WITH_AES_256_CBC_SHA (0x0035)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_SHA (0x0005)
+                Cipher Suite: TLS_RSA_WITH_3DES_EDE_CBC_SHA (0x000a)
+                Cipher Suite: TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA (0xc013)
+                Cipher Suite: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (0xc014)
+                Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_128_CBC_SHA (0xc009)
+                Cipher Suite: TLS_ECDHE_ECDSA_WITH_AES_256_CBC_SHA (0xc00a)
+                Cipher Suite: TLS_DHE_DSS_WITH_AES_128_CBC_SHA (0x0032)
+                Cipher Suite: TLS_DHE_DSS_WITH_AES_256_CBC_SHA (0x0038)
+                Cipher Suite: TLS_DHE_DSS_WITH_3DES_EDE_CBC_SHA (0x0013)
+                Cipher Suite: TLS_RSA_WITH_RC4_128_MD5 (0x0004)
+            Compression Methods Length: 1
+            Compression Methods (1 method)
+            Extensions Length: 55
+            Extension: renegotiation_info (len=1)
+            Extension: server_name (len=21)
+            Extension: status_request (len=5)
+            Extension: supported_groups (len=6)
+            Extension: ec_point_formats (len=2)
+            [JA3 Fullstring: 769,47-53-5-10-49171-49172-49161-49162-50-56-19-4,65281-0-5-10-11,23-24,0]
+            [JA3: 2201d8e006f8f005a6b415f61e677532]
+
+No.     Time           Source                Destination           Protocol Length Info
+      7 0.000700843    192.168.32.100        192.168.32.101        TCP      54     443 → 49221 [ACK] Seq=1 Ack=162 Win=64128 Len=0
+
+Frame 7: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36), Dst: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Destination: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Source: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.32.100, Dst: 192.168.32.101
+Transmission Control Protocol, Src Port: 443, Dst Port: 49221, Seq: 1, Ack: 162, Len: 0
+    Source Port: 443
+    Destination Port: 49221
+    [Stream index: 0]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 1104428787
+    [Next Sequence Number: 1    (relative sequence number)]
+    Acknowledgment Number: 162    (relative ack number)
+    Acknowledgment number (raw): 1601207010
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window: 501
+    [Calculated window size: 64128]
+    [Window size scaling factor: 128]
+    Checksum: 0xc234 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 6]
+        [The RTT to ACK the segment was: 0.000019356 seconds]
+        [iRTT: 0.000158538 seconds]
+
+No.     Time           Source                Destination           Protocol Length Info
+      8 0.033578664    192.168.32.100        192.168.32.101        TLSv1    1373   Server Hello, Certificate, Server Key Exchange, Server Hello Done
+
+Frame 8: 1373 bytes on wire (10984 bits), 1373 bytes captured (10984 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36), Dst: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Destination: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Source: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.32.100, Dst: 192.168.32.101
+Transmission Control Protocol, Src Port: 443, Dst Port: 49221, Seq: 1, Ack: 162, Len: 1319
+    Source Port: 443
+    Destination Port: 49221
+    [Stream index: 0]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 1319]
+    Sequence Number: 1    (relative sequence number)
+    Sequence Number (raw): 1104428787
+    [Next Sequence Number: 1320    (relative sequence number)]
+    Acknowledgment Number: 162    (relative ack number)
+    Acknowledgment number (raw): 1601207010
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 501
+    [Calculated window size: 64128]
+    [Window size scaling factor: 128]
+    Checksum: 0xc75b [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+        [iRTT: 0.000158538 seconds]
+        [Bytes in flight: 1319]
+        [Bytes sent since last PSH flag: 1319]
+    TCP payload (1319 bytes)
+Transport Layer Security
+    TLSv1 Record Layer: Handshake Protocol: Server Hello
+        Content Type: Handshake (22)
+        Version: TLS 1.0 (0x0301)
+        Length: 89
+        Handshake Protocol: Server Hello
+            Handshake Type: Server Hello (2)
+            Length: 85
+            Version: TLS 1.0 (0x0301)
+            Random: 5e40c86d9f97aae292e586c81fa4ccdce97a987d081f09f0444f574e47524400
+                GMT Unix Time: Feb  9, 2020 22:05:17.000000000 EST
+                Random Bytes: 9f97aae292e586c81fa4ccdce97a987d081f09f0444f574e47524400
+            Session ID Length: 32
+            Session ID: 8b5b67aedeaf01302fcb907fe0e0c27f07737aa50091ebda809afee8ba9ce878
+            Cipher Suite: TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA (0xc014)
+            Compression Method: null (0)
+            Extensions Length: 13
+            Extension: renegotiation_info (len=1)
+            Extension: ec_point_formats (len=4)
+            [JA3S Fullstring: 769,49172,65281-11]
+            [JA3S: 623de93db17d313345d7ea481e7443cf]
+    TLSv1 Record Layer: Handshake Protocol: Certificate
+        Content Type: Handshake (22)
+        Version: TLS 1.0 (0x0301)
+        Length: 875
+        Handshake Protocol: Certificate
+            Handshake Type: Certificate (11)
+            Length: 871
+            Certificates Length: 868
+            Certificates (868 bytes)
+                Certificate Length: 865
+                Certificate: 3082035d30820245a00302010202140d20312ffb8e875e873552cf98c28d0aed874d4530… (id-at-commonName=inetsim.org,id-at-organizationalUnitName=Development,id-at-organizationName=INetSim)
+                    signedCertificate
+                        version: v3 (2)
+                        serialNumber: 0x0d20312ffb8e875e873552cf98c28d0aed874d45
+                        signature (sha1WithRSAEncryption)
+                            Algorithm Id: 1.2.840.113549.1.1.5 (sha1WithRSAEncryption)
+                        issuer: rdnSequence (0)
+                            rdnSequence: 3 items (id-at-commonName=inetsim.org,id-at-organizationalUnitName=Development,id-at-organizationName=INetSim)
+                                RDNSequence item: 1 item (id-at-organizationName=INetSim)
+                                    RelativeDistinguishedName item (id-at-organizationName=INetSim)
+                                        Object Id: 2.5.4.10 (id-at-organizationName)
+                                        DirectoryString: uTF8String (4)
+                                            uTF8String: INetSim
+                                RDNSequence item: 1 item (id-at-organizationalUnitName=Development)
+                                    RelativeDistinguishedName item (id-at-organizationalUnitName=Development)
+                                        Object Id: 2.5.4.11 (id-at-organizationalUnitName)
+                                        DirectoryString: uTF8String (4)
+                                            uTF8String: Development
+                                RDNSequence item: 1 item (id-at-commonName=inetsim.org)
+                                    RelativeDistinguishedName item (id-at-commonName=inetsim.org)
+                                        Object Id: 2.5.4.3 (id-at-commonName)
+                                        DirectoryString: uTF8String (4)
+                                            uTF8String: inetsim.org
+                        validity
+                            notBefore: utcTime (0)
+                                utcTime: 2023-03-10 13:51:15 (UTC)
+                            notAfter: utcTime (0)
+                                utcTime: 2033-03-07 13:51:15 (UTC)
+                        subject: rdnSequence (0)
+                            rdnSequence: 3 items (id-at-commonName=inetsim.org,id-at-organizationalUnitName=Development,id-at-organizationName=INetSim)
+                                RDNSequence item: 1 item (id-at-organizationName=INetSim)
+                                    RelativeDistinguishedName item (id-at-organizationName=INetSim)
+                                        Object Id: 2.5.4.10 (id-at-organizationName)
+                                        DirectoryString: uTF8String (4)
+                                            uTF8String: INetSim
+                                RDNSequence item: 1 item (id-at-organizationalUnitName=Development)
+                                    RelativeDistinguishedName item (id-at-organizationalUnitName=Development)
+                                        Object Id: 2.5.4.11 (id-at-organizationalUnitName)
+                                        DirectoryString: uTF8String (4)
+                                            uTF8String: Development
+                                RDNSequence item: 1 item (id-at-commonName=inetsim.org)
+                                    RelativeDistinguishedName item (id-at-commonName=inetsim.org)
+                                        Object Id: 2.5.4.3 (id-at-commonName)
+                                        DirectoryString: uTF8String (4)
+                                            uTF8String: inetsim.org
+                        subjectPublicKeyInfo
+                            algorithm (rsaEncryption)
+                                Algorithm Id: 1.2.840.113549.1.1.1 (rsaEncryption)
+                            subjectPublicKey: 3082010a02820101009db5b155568a438c26fca0e20e4f19262f21a9bc352eaf4ffd0ecf…
+                                modulus: 0x009db5b155568a438c26fca0e20e4f19262f21a9bc352eaf4ffd0ecffa58168bd84111be…
+                                publicExponent: 65537
+                        extensions: 3 items
+                            Extension (id-ce-subjectKeyIdentifier)
+                                Extension Id: 2.5.29.14 (id-ce-subjectKeyIdentifier)
+                                SubjectKeyIdentifier: 626c0d887d7dfd29c22c831c526820cf9ef411c4
+                            Extension (id-ce-authorityKeyIdentifier)
+                                Extension Id: 2.5.29.35 (id-ce-authorityKeyIdentifier)
+                                AuthorityKeyIdentifier
+                                    keyIdentifier: 626c0d887d7dfd29c22c831c526820cf9ef411c4
+                            Extension (id-ce-basicConstraints)
+                                Extension Id: 2.5.29.19 (id-ce-basicConstraints)
+                                critical: True
+                                BasicConstraintsSyntax
+                                    cA: True
+                    algorithmIdentifier (sha1WithRSAEncryption)
+                        Algorithm Id: 1.2.840.113549.1.1.5 (sha1WithRSAEncryption)
+                    Padding: 0
+                    encrypted: 6b5900dd34188b60d6a610f3a61e9f13bde7f0a45e89086edee18b199068a4ec694eb8db…
+    TLSv1 Record Layer: Handshake Protocol: Server Key Exchange
+        Content Type: Handshake (22)
+        Version: TLS 1.0 (0x0301)
+        Length: 331
+        Handshake Protocol: Server Key Exchange
+            Handshake Type: Server Key Exchange (12)
+            Length: 327
+            EC Diffie-Hellman Server Params
+                Curve Type: named_curve (0x03)
+                Named Curve: secp256r1 (0x0017)
+                Pubkey Length: 65
+                Pubkey: 04db26a44b8e3b26b1ee14c70e1454334c3a8f84e082d6978284b3c9b1e982d734a1cd15…
+                Signature Length: 256
+                Signature: 89ac20d897115f629a72b582a9f55ded979cf0e9152ebbd1b621eea5214ed1f7ab0e107c…
+    TLSv1 Record Layer: Handshake Protocol: Server Hello Done
+        Content Type: Handshake (22)
+        Version: TLS 1.0 (0x0301)
+        Length: 4
+        Handshake Protocol: Server Hello Done
+            Handshake Type: Server Hello Done (14)
+            Length: 0
+
+No.     Time           Source                Destination           Protocol Length Info
+      9 0.038578072    192.168.32.101        192.168.32.100        TLSv1    188    Client Key Exchange, Change Cipher Spec, Encrypted Handshake Message
+
+Frame 9: 188 bytes on wire (1504 bits), 188 bytes captured (1504 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d), Dst: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Destination: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Source: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.32.101, Dst: 192.168.32.100
+Transmission Control Protocol, Src Port: 49221, Dst Port: 443, Seq: 162, Ack: 1320, Len: 134
+    Source Port: 49221
+    Destination Port: 443
+    [Stream index: 0]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 134]
+    Sequence Number: 162    (relative sequence number)
+    Sequence Number (raw): 1601207010
+    [Next Sequence Number: 296    (relative sequence number)]
+    Acknowledgment Number: 1320    (relative ack number)
+    Acknowledgment number (raw): 1104430106
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 16095
+    [Calculated window size: 64380]
+    [Window size scaling factor: 4]
+    Checksum: 0x8f6d [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 8]
+        [The RTT to ACK the segment was: 0.004999408 seconds]
+        [iRTT: 0.000158538 seconds]
+        [Bytes in flight: 134]
+        [Bytes sent since last PSH flag: 134]
+    TCP payload (134 bytes)
+Transport Layer Security
+    TLSv1 Record Layer: Handshake Protocol: Client Key Exchange
+        Content Type: Handshake (22)
+        Version: TLS 1.0 (0x0301)
+        Length: 70
+        Handshake Protocol: Client Key Exchange
+            Handshake Type: Client Key Exchange (16)
+            Length: 66
+            EC Diffie-Hellman Client Params
+                Pubkey Length: 65
+                Pubkey: 0482e2803afd72e328aeda67c42bfd98475b091dd7fa25c585d02f48afce33e476b2d622…
+    TLSv1 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: TLS 1.0 (0x0301)
+        Length: 1
+        Change Cipher Spec Message
+    TLSv1 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: TLS 1.0 (0x0301)
+        Length: 48
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+     10 0.039139453    192.168.32.100        192.168.32.101        TLSv1    113    Change Cipher Spec, Encrypted Handshake Message
+
+Frame 10: 113 bytes on wire (904 bits), 113 bytes captured (904 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36), Dst: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Destination: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Source: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.32.100, Dst: 192.168.32.101
+Transmission Control Protocol, Src Port: 443, Dst Port: 49221, Seq: 1320, Ack: 296, Len: 59
+    Source Port: 443
+    Destination Port: 49221
+    [Stream index: 0]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 59]
+    Sequence Number: 1320    (relative sequence number)
+    Sequence Number (raw): 1104430106
+    [Next Sequence Number: 1379    (relative sequence number)]
+    Acknowledgment Number: 296    (relative ack number)
+    Acknowledgment number (raw): 1601207144
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 501
+    [Calculated window size: 64128]
+    [Window size scaling factor: 128]
+    Checksum: 0xc26f [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 9]
+        [The RTT to ACK the segment was: 0.000561381 seconds]
+        [iRTT: 0.000158538 seconds]
+        [Bytes in flight: 59]
+        [Bytes sent since last PSH flag: 59]
+    TCP payload (59 bytes)
+Transport Layer Security
+    TLSv1 Record Layer: Change Cipher Spec Protocol: Change Cipher Spec
+        Content Type: Change Cipher Spec (20)
+        Version: TLS 1.0 (0x0301)
+        Length: 1
+        Change Cipher Spec Message
+    TLSv1 Record Layer: Handshake Protocol: Encrypted Handshake Message
+        Content Type: Handshake (22)
+        Version: TLS 1.0 (0x0301)
+        Length: 48
+        Handshake Protocol: Encrypted Handshake Message
+
+No.     Time           Source                Destination           Protocol Length Info
+     11 0.041213534    192.168.32.101        192.168.32.100        TLSv1    395    Application Data
+
+Frame 11: 395 bytes on wire (3160 bits), 395 bytes captured (3160 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d), Dst: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Destination: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Source: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.32.101, Dst: 192.168.32.100
+Transmission Control Protocol, Src Port: 49221, Dst Port: 443, Seq: 296, Ack: 1379, Len: 341
+    Source Port: 49221
+    Destination Port: 443
+    [Stream index: 0]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 341]
+    Sequence Number: 296    (relative sequence number)
+    Sequence Number (raw): 1601207144
+    [Next Sequence Number: 637    (relative sequence number)]
+    Acknowledgment Number: 1379    (relative ack number)
+    Acknowledgment number (raw): 1104430165
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 16080
+    [Calculated window size: 64320]
+    [Window size scaling factor: 4]
+    Checksum: 0xcc0d [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 10]
+        [The RTT to ACK the segment was: 0.002074081 seconds]
+        [iRTT: 0.000158538 seconds]
+        [Bytes in flight: 341]
+        [Bytes sent since last PSH flag: 341]
+    TCP payload (341 bytes)
+Transport Layer Security
+    TLSv1 Record Layer: Application Data Protocol: Hypertext Transfer Protocol
+        Content Type: Application Data (23)
+        Version: TLS 1.0 (0x0301)
+        Length: 336
+        Encrypted Application Data: 55b78872ea041ae57ae4ed1abe46b19633c87c89cd80324098b37966555d5af3ac365ee8…
+        [Application Data Protocol: Hypertext Transfer Protocol]
+
+No.     Time           Source                Destination           Protocol Length Info
+     12 0.051913116    192.168.32.100        192.168.32.101        TLSv1    235    Application Data
+
+Frame 12: 235 bytes on wire (1880 bits), 235 bytes captured (1880 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36), Dst: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Destination: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Source: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.32.100, Dst: 192.168.32.101
+Transmission Control Protocol, Src Port: 443, Dst Port: 49221, Seq: 1379, Ack: 637, Len: 181
+    Source Port: 443
+    Destination Port: 49221
+    [Stream index: 0]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 181]
+    Sequence Number: 1379    (relative sequence number)
+    Sequence Number (raw): 1104430165
+    [Next Sequence Number: 1560    (relative sequence number)]
+    Acknowledgment Number: 637    (relative ack number)
+    Acknowledgment number (raw): 1601207485
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x018 (PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······AP···]
+    Window: 501
+    [Calculated window size: 64128]
+    [Window size scaling factor: 128]
+    Checksum: 0xc2e9 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 11]
+        [The RTT to ACK the segment was: 0.010699582 seconds]
+        [iRTT: 0.000158538 seconds]
+        [Bytes in flight: 181]
+        [Bytes sent since last PSH flag: 181]
+    TCP payload (181 bytes)
+Transport Layer Security
+    TLSv1 Record Layer: Application Data Protocol: Hypertext Transfer Protocol
+        Content Type: Application Data (23)
+        Version: TLS 1.0 (0x0301)
+        Length: 176
+        Encrypted Application Data: 65e3889a83d1e8efba995e0781bb6109ce22f1cce668a6109319f19ee35730e22f863762…
+        [Application Data Protocol: Hypertext Transfer Protocol]
+
+No.     Time           Source                Destination           Protocol Length Info
+     13 0.053715433    192.168.32.100        192.168.32.101        TLSv1    384    Application Data, Encrypted Alert
+
+Frame 13: 384 bytes on wire (3072 bits), 384 bytes captured (3072 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36), Dst: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Destination: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Source: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.32.100, Dst: 192.168.32.101
+Transmission Control Protocol, Src Port: 443, Dst Port: 49221, Seq: 1560, Ack: 637, Len: 330
+    Source Port: 443
+    Destination Port: 49221
+    [Stream index: 0]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 330]
+    Sequence Number: 1560    (relative sequence number)
+    Sequence Number (raw): 1104430346
+    [Next Sequence Number: 1891    (relative sequence number)]
+    Acknowledgment Number: 637    (relative ack number)
+    Acknowledgment number (raw): 1601207485
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x019 (FIN, PSH, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 1... = Push: Set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...1 = Fin: Set
+            [Expert Info (Chat/Sequence): Connection finish (FIN)]
+        [TCP Flags: ·······AP··F]
+            [Expert Info (Note/Sequence): This frame initiates the connection closing]
+    Window: 501
+    [Calculated window size: 64128]
+    [Window size scaling factor: 128]
+    Checksum: 0xc37e [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+        [iRTT: 0.000158538 seconds]
+        [Bytes in flight: 511]
+        [Bytes sent since last PSH flag: 330]
+    TCP payload (330 bytes)
+Transport Layer Security
+    TLSv1 Record Layer: Application Data Protocol: Hypertext Transfer Protocol
+        Content Type: Application Data (23)
+        Version: TLS 1.0 (0x0301)
+        Length: 288
+        Encrypted Application Data: ef0a375720e201e36b721d296559b50708d8ba879f47e63b758fa909ece596e0a2bed5c9…
+        [Application Data Protocol: Hypertext Transfer Protocol]
+    TLSv1 Record Layer: Encrypted Alert
+        Content Type: Alert (21)
+        Version: TLS 1.0 (0x0301)
+        Length: 32
+        Alert Message: Encrypted Alert
+
+No.     Time           Source                Destination           Protocol Length Info
+     14 0.053867332    192.168.32.101        192.168.32.100        TCP      60     49221 → 443 [ACK] Seq=637 Ack=1891 Win=65700 Len=0
+
+Frame 14: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d), Dst: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Destination: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Source: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Type: IPv4 (0x0800)
+    Padding: 000000000000
+Internet Protocol Version 4, Src: 192.168.32.101, Dst: 192.168.32.100
+Transmission Control Protocol, Src Port: 49221, Dst Port: 443, Seq: 637, Ack: 1891, Len: 0
+    Source Port: 49221
+    Destination Port: 443
+    [Stream index: 0]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 637    (relative sequence number)
+    Sequence Number (raw): 1601207485
+    [Next Sequence Number: 637    (relative sequence number)]
+    Acknowledgment Number: 1891    (relative ack number)
+    Acknowledgment number (raw): 1104430677
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window: 16425
+    [Calculated window size: 65700]
+    [Window size scaling factor: 4]
+    Checksum: 0x8739 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 13]
+        [The RTT to ACK the segment was: 0.000151899 seconds]
+        [iRTT: 0.000158538 seconds]
+
+No.     Time           Source                Destination           Protocol Length Info
+     15 0.053923990    192.168.32.101        192.168.32.100        TCP      60     49221 → 443 [FIN, ACK] Seq=637 Ack=1891 Win=65700 Len=0
+
+Frame 15: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d), Dst: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Destination: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Source: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Type: IPv4 (0x0800)
+    Padding: 000000000000
+Internet Protocol Version 4, Src: 192.168.32.101, Dst: 192.168.32.100
+Transmission Control Protocol, Src Port: 49221, Dst Port: 443, Seq: 637, Ack: 1891, Len: 0
+    Source Port: 49221
+    Destination Port: 443
+    [Stream index: 0]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 637    (relative sequence number)
+    Sequence Number (raw): 1601207485
+    [Next Sequence Number: 638    (relative sequence number)]
+    Acknowledgment Number: 1891    (relative ack number)
+    Acknowledgment number (raw): 1104430677
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x011 (FIN, ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...1 = Fin: Set
+            [Expert Info (Chat/Sequence): Connection finish (FIN)]
+        [TCP Flags: ·······A···F]
+            [Expert Info (Note/Sequence): This frame undergoes the connection closing]
+    Window: 16425
+    [Calculated window size: 65700]
+    [Window size scaling factor: 4]
+    Checksum: 0x8738 [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+
+No.     Time           Source                Destination           Protocol Length Info
+     16 0.053938430    192.168.32.100        192.168.32.101        TCP      54     443 → 49221 [ACK] Seq=1891 Ack=638 Win=64128 Len=0
+
+Frame 16: 54 bytes on wire (432 bits), 54 bytes captured (432 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36), Dst: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Destination: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Source: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Type: IPv4 (0x0800)
+Internet Protocol Version 4, Src: 192.168.32.100, Dst: 192.168.32.101
+Transmission Control Protocol, Src Port: 443, Dst Port: 49221, Seq: 1891, Ack: 638, Len: 0
+    Source Port: 443
+    Destination Port: 49221
+    [Stream index: 0]
+    [Conversation completeness: Complete, WITH_DATA (31)]
+    [TCP Segment Len: 0]
+    Sequence Number: 1891    (relative sequence number)
+    Sequence Number (raw): 1104430677
+    [Next Sequence Number: 1891    (relative sequence number)]
+    Acknowledgment Number: 638    (relative ack number)
+    Acknowledgment number (raw): 1601207486
+    0101 .... = Header Length: 20 bytes (5)
+    Flags: 0x010 (ACK)
+        000. .... .... = Reserved: Not set
+        ...0 .... .... = Accurate ECN: Not set
+        .... 0... .... = Congestion Window Reduced: Not set
+        .... .0.. .... = ECN-Echo: Not set
+        .... ..0. .... = Urgent: Not set
+        .... ...1 .... = Acknowledgment: Set
+        .... .... 0... = Push: Not set
+        .... .... .0.. = Reset: Not set
+        .... .... ..0. = Syn: Not set
+        .... .... ...0 = Fin: Not set
+        [TCP Flags: ·······A····]
+    Window: 501
+    [Calculated window size: 64128]
+    [Window size scaling factor: 128]
+    Checksum: 0xc56c [unverified]
+    [Checksum Status: Unverified]
+    Urgent Pointer: 0
+    [Timestamps]
+    [SEQ/ACK analysis]
+        [This is an ACK to the segment in frame: 15]
+        [The RTT to ACK the segment was: 0.000014440 seconds]
+        [iRTT: 0.000158538 seconds]
+
+No.     Time           Source                Destination           Protocol Length Info
+     17 5.055611964    PcsCompu_c7:e1:36     PcsCompu_9b:cd:1d     ARP      42     Who has 192.168.32.101? Tell 192.168.32.100
+
+Frame 17: 42 bytes on wire (336 bits), 42 bytes captured (336 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36), Dst: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Destination: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Source: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Type: ARP (0x0806)
+Address Resolution Protocol (request)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: request (1)
+    Sender MAC address: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Sender IP address: 192.168.32.100
+    Target MAC address: 00:00:00_00:00:00 (00:00:00:00:00:00)
+    Target IP address: 192.168.32.101
+
+No.     Time           Source                Destination           Protocol Length Info
+     18 5.055803056    PcsCompu_9b:cd:1d     PcsCompu_c7:e1:36     ARP      60     192.168.32.101 is at 08:00:27:9b:cd:1d
+
+Frame 18: 60 bytes on wire (480 bits), 60 bytes captured (480 bits) on interface eth0, id 0
+Ethernet II, Src: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d), Dst: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Destination: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Source: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Type: ARP (0x0806)
+    Padding: 000000000000000000000000000000000000
+Address Resolution Protocol (reply)
+    Hardware type: Ethernet (1)
+    Protocol type: IPv4 (0x0800)
+    Hardware size: 6
+    Protocol size: 4
+    Opcode: reply (2)
+    Sender MAC address: PcsCompu_9b:cd:1d (08:00:27:9b:cd:1d)
+    Sender IP address: 192.168.32.101
+    Target MAC address: PcsCompu_c7:e1:36 (08:00:27:c7:e1:36)
+    Target IP address: 192.168.32.100
