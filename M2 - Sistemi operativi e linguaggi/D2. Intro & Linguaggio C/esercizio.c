@@ -1,26 +1,27 @@
 #include <stdio.h>
 #include <math.h>
 
+
 int main()
 {
-        float valore;
-        float areaQuadrato, areaCerchio, areaTriangoloE;
+	float valore;
+	double areaQuadrato, areaCerchio, areaTriangoloE;
 
 
-        while (valore<=0) {
-                printf("Inserisci un valore: ");
-                scanf("%f", &valore);
-        }
+	while (valore<=0) {
+		printf("Inserisci un valore: ");
+		scanf("%f", &valore);
+	}
 
-        areaQuadrato = valore * valore;
+	areaQuadrato = powf(valore,2);
 
-        areaCerchio = M_PI * ((valore * valore) / 4);
+	areaCerchio = M_PI * (powf(valore,2) / 4);
 
-        areaTriangoloE = sqrtf(3) / 4 * (valore * valore);
+	areaTriangoloE = sqrtf(3) / 4 * powf(valore,2);
 
-        printf("L'area del quadrato è: %.3f\n", areaQuadrato);
-        printf("L'area del cerchio è: %.3f\n", areaCerchio);
-        printf("L'area del triangolo equilatero è: %.3f\n", areaTriangoloE);
+	printf("L'area del quadrato è: %.3f\n", areaQuadrato);
+	printf("L'area del cerchio è: %.3f\n", areaCerchio);
+	printf("L'area del triangolo equilatero è: %.3f\n", areaTriangoloE);
 
-        return 0;
+	return 0;
 }
