@@ -64,7 +64,7 @@ int main()
 
 		sceltamenu = '0';
 
-	} while (true);
+	} while (1);
 
 	return 0;
 }
